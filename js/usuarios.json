@@ -1,0 +1,36 @@
+[
+	{
+	"id":"1", "nombre": "Maximiliano", 
+	"edad":"38",
+	"sexo": "masculino",
+	"email": "maximilianopaterno83@gmail.com"
+	},
+	{
+	"id":"2",
+	"nombre": "Cecilia",
+	"edad":"37",
+	"sexo": "femenino",
+	"email": "ceciliasosa83@gmail.com"
+	},
+	{
+	"id":"3",
+	"nombre": "Azul",
+	"edad":"3",
+	"sexo": "femenino",
+	"email": "azul2019@gmail.com"
+	},
+	{
+	"id":"4",
+	"nombre": "Maria",
+	"edad":"35",
+	"sexo": "femenino",
+	"email": "marisosa_16@hotmail.com"
+	},
+	{
+	"id":"5",
+	"nombre": "Ramon",
+	"edad":"72",
+	"sexo": "masculino",
+	"email": "ramonsosa@gmail.com"
+	}
+]

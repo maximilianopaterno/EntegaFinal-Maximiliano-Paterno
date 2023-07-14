@@ -1,0 +1,81 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Imagen de fondo */
+body
+{
+    background-image: url(../img/logo_landing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main
+{
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+/* Personalizar article login */
+#login
+{
+    display: flex;
+    align-content: space-evenly;
+    justify-content: flex-end;
+    align-self: center;  
+    align-items: center;
+    border-bottom: 1px solid;
+}
+
+/* Personalizacion de los botones */
+#login button
+{
+    padding: 5px 5px;
+    margin: 10px;
+    width: 120px;
+}
+
+label
+{
+    width: 75px;
+    font-weight: bold;
+}
+
+p
+{
+    width: 800px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+/* Personalizar pagina principal */
+.container-fluid
+{
+    background-image: url(../img/caminar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Personalizar label kilometros en el formulario Pasos */
+.label_kilometros
+{
+    width: 280px;
+}
+
+/* Personalizar formularios */
+#formulariopasos, #formularioimc
+{
+    display: flex;
+    background-color: rgb(253, 246, 238);
+    position: relative;
+    left: 25%;
+    top: 15px;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+

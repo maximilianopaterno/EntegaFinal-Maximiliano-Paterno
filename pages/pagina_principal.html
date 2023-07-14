@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal | Steps</title>
+    <link rel="shortcut icon" href="../img/icono.webp" sizes="16x16">
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/s.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header id="header">
+            <article id="login">
+                <!-- Login Boton Cerrar Sesion-->  
+                <button type="button" class="btn btn-secondary" id="cerrarsesion"> Cerrar Sesion</button>
+                <!-- Fin Login Boton Cerrar Sesion-->
+            </article>
+        </header>
+        <main>
+            <!-- Inicio Class Caminar la cual contiene los parrafos y el boton de "Calculadora de Pasos"-->
+            <div class="caminar">
+                <h3>Caminar</h3>
+                <p>
+                    Es una manera sencilla de hacer ejercicio físico de forma habitual con grandes beneficios para diferentes aspectos de nuestra salud, 
+                    incluyendo la pérdida de peso en aquellas personas en las que esté médicamente aconsejado.
+                </p>
+                    <br>
+                <h3>Calculando calorías y pasos diarios</h3>
+                <p>
+                    Respecto a la distancia que se debe caminar diariamente existen diferentes opiniones, pero a menudo se suele apuntar a la recomendación que hace al respecto el CDC estadounidense: 10.000 pasos al día. 
+                    Teniendo en cuenta que, según datos del mismo organismo,
+                    una persona da de media unos 2.000 pasos en un kilómetro y medio, esto implicaría que deberíamos tratar de andar unos 7,5 kilómetros.
+                    Esta recomendación, en principio, se basa más en los beneficios que tiene la práctica de caminar sobre el sistema cardiovascular que en la pérdida de peso en sí misma. Sin embargo, como decíamos,
+                    caminar también puede ser una gran alternativa para aquellas personas que necesiten perder peso.
+                </p>
+                <br>
+                <!-- Inicio Seccion de calculos-->
+                <section id="principal">
+                    <!-- Inicio de calculos de pasos-->
+                    <article id="opcion_pasos">
+                        <button id="pasos" class="btn btn-primary btn-lg"> Calculadora de pasos diarios</button>
+                        <div id="formulariopasos" style="display: none;"><br>
+                            <label class="label_kilometros" for="kilometros">Cuántos kilometros realizaste hoy?</label>
+                            <input type="number" id="kilometros" name="kilometros" min="0" style="width: 50px;" placeholder="0"><br>
+                            <br>
+                            <button class="btn btn-outline-warning" id="calcular">Calcular pasos</button>
+                            <button class="btn btn-outline-primary" style="float: right;" id="reiniciar">Reiniciar contador</button><br><br>
+                            <h3 id="calculoDePasos" style="display: none;">Calculo de Pasos</h3>
+                        </div>
+                    </article>
+                </section>   
+                <!-- FIn de calculos de pasos-->
+            </div>
+            <!-- Fin Class Caminar la cual contiene los parrafos y el boton de "Calculadora de Pasos"-->
+            <br>
+            <!-- Inicio Class Calculo de masa corporal la cual contiene los parrafos y el boton de "Calculadora de Indice de masa corporal"-->
+            <div class="calculomasacorpoal">
+                <h3>Calculador de indice de masa corporal (IMC)</h3>
+                <p>
+                    El Índice de Masa Corporal (IMC) es una medida de asociación entre el peso y la talla de una persona. El IMC es usado como uno de 
+                    varios indicadores para evaluar el estado nutricional.
+                    <br>
+                    El IMC constituye la medida poblacional más útil del sobrepeso y la obesidad, pues la forma de calcularlo no varía en 
+                    función del sexo ni de la edad en la población adulta. No obstante, debe considerarse como una guía aproximativa, pues
+                    puede no corresponder al mismo grado de gordura en diferentes individuos.
+                    <br>
+                    La Organización Mundial de la Salud, ha propuesto una clasificación del estado nutricional dependiendo del IMC de una persona.
+                </p>
+                <br>
+                <!-- Inicio de calculos de indice de masa corporal-->
+                <article id="opcion_imc"></article>
+                    <button id="imc" class="btn btn-primary btn-lg"> Calculadora de Indice de masa corporal </button>
+                    <div id="formularioimc" style="display: none;"><br>
+                        <label for="altura" style="width: 80px;">Altura:</label>
+                        <input type="number" id="altura" name="altura" min="0" maxlength="3" style="width: 50px;" placeholder="100"> mts.<br><br>
+                        <label for="peso" style="width: 80px;">Peso:</label>
+                        <input type="number" id="peso" name="peso" min="0" maxlength="3" style="width: 50px;" placeholder="0"> kgs.<br><br>
+                        <button id="calcularimc" class="btn btn-outline-danger">Calcular IMC</button>
+                        <button id="reiniciarimc" class="btn btn-outline-success" style="float: right;" >Reiniciar</button><br><br>
+                        <h3 id="calculoimc" style="display: none"> Calculo de Masa</h3>
+                    </div>
+                    </article>
+                    <!-- Fin de calculos de indice de masa corporal-->
+                </div>
+                <!-- Fin Class Calculo de masa corporal la cual contiene los parrafos y el boton de "Calculadora de Indice de masa corporal"-->
+       </main>
+    </div>  
+    <!-- Java Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Anime JS -->
+    <script src="  https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js" ></script> 
+    <!-- Mis JS -->
+    <!-- Usuarios almacenados en LocalStorage-->
+    <script src="../js/usuarios.js"></script>
+    <!-- archvivo para calculos -->
+    <script src="../js/calculos.js"></script>
+    <!-- archivo para inicio de sesion -->
+    <script src="../js/inicio.js"></script>    
+</body>
+</html>
